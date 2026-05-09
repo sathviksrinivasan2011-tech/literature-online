@@ -10,4 +10,6 @@ services:
       - key: NODE_ENV
         value: production
       - key: BACKEND_ALLOWED_ORIGINS
-        sync: false
+        value: https://literature-online.onrender.com
+      - key: CLIENT_ORIGIN
+        value: https://literature-online.onrender.com

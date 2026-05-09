@@ -41,7 +41,7 @@ Literature Online is prepared for a split production deployment:
 The frontend never assumes localhost in production. It connects to the backend with:
 
 ```env
-NEXT_PUBLIC_SOCKET_URL="https://your-render-service.onrender.com"
+NEXT_PUBLIC_SOCKET_URL="https://literature-online.onrender.com"
 ```
 
 For local development, run the frontend and backend as two processes:
@@ -133,7 +133,8 @@ Render environment variables:
 
 ```env
 NODE_ENV="production"
-BACKEND_ALLOWED_ORIGINS="https://your-vercel-app.vercel.app"
+BACKEND_ALLOWED_ORIGINS="https://literature-online.onrender.com"
+CLIENT_ORIGIN="https://literature-online.onrender.com"
 ```
 
 If you use a custom Vercel domain, put that exact origin in `BACKEND_ALLOWED_ORIGINS`. Multiple origins are comma-separated:
@@ -145,7 +146,7 @@ BACKEND_ALLOWED_ORIGINS="https://literature.example.com,https://your-vercel-app.
 Render exposes the Socket.IO endpoint at the service root using Socket.IO's default `/socket.io` path. Example frontend socket URL:
 
 ```env
-NEXT_PUBLIC_SOCKET_URL="https://literature-online-socket.onrender.com"
+NEXT_PUBLIC_SOCKET_URL="https://literature-online.onrender.com"
 ```
 
 ### Frontend on Vercel
@@ -161,8 +162,8 @@ Vercel settings:
 Vercel environment variables:
 
 ```env
-NEXT_PUBLIC_SOCKET_URL="https://your-render-service.onrender.com"
-NEXT_PUBLIC_APP_URL="https://your-vercel-app.vercel.app"
+NEXT_PUBLIC_SOCKET_URL="https://literature-online.onrender.com"
+NEXT_PUBLIC_APP_URL="https://literature-online.onrender.com"
 DATABASE_URL="file:./dev.db"
 GOOGLE_CLIENT_ID=""
 GOOGLE_CLIENT_SECRET=""
