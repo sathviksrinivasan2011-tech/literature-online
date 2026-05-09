@@ -133,8 +133,8 @@ Render environment variables:
 
 ```env
 NODE_ENV="production"
-BACKEND_ALLOWED_ORIGINS="https://literature-online.onrender.com"
-CLIENT_ORIGIN="https://literature-online.onrender.com"
+BACKEND_ALLOWED_ORIGINS="https://literature-online-one.vercel.app"
+CLIENT_ORIGIN="https://literature-online-one.vercel.app"
 ```
 
 If you use a custom Vercel domain, put that exact origin in `BACKEND_ALLOWED_ORIGINS`. Multiple origins are comma-separated:
@@ -163,7 +163,7 @@ Vercel environment variables:
 
 ```env
 NEXT_PUBLIC_SOCKET_URL="https://literature-online.onrender.com"
-NEXT_PUBLIC_APP_URL="https://literature-online.onrender.com"
+NEXT_PUBLIC_APP_URL="https://literature-online-one.vercel.app"
 DATABASE_URL="file:./dev.db"
 GOOGLE_CLIENT_ID=""
 GOOGLE_CLIENT_SECRET=""

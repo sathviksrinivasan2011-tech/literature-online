@@ -10,6 +10,6 @@ services:
       - key: NODE_ENV
         value: production
       - key: BACKEND_ALLOWED_ORIGINS
-        value: https://literature-online.onrender.com
+        value: https://literature-online-one.vercel.app
       - key: CLIENT_ORIGIN
-        value: https://literature-online.onrender.com
+        value: https://literature-online-one.vercel.app
