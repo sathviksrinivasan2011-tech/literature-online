@@ -1,0 +1,19 @@
+{
+  "name": "Literature Online",
+  "short_name": "Literature",
+  "description": "Play the South Asian card game Literature with friends.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#031f18",
+  "theme_color": "#07412f",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

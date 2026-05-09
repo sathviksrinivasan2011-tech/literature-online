@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["es2022"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist",
+    "rootDir": ".",
+    "noEmit": false,
+    "declaration": false,
+    "sourceMap": true,
+    "isolatedModules": false
+  },
+  "include": ["server/**/*.ts", "lib/game.ts", "lib/socket-events.ts"],
+  "exclude": ["node_modules", "app", "components", "hooks"]
+}

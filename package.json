@@ -1,0 +1,42 @@
+{
+  "name": "literature-online",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A polished multiplayer web app for the South Asian card game Literature.",
+  "scripts": {
+    "dev": "next dev",
+    "dev:server": "tsx server/index.ts",
+    "build": "prisma generate && next build",
+    "build:server": "tsc -p tsconfig.server.json",
+    "start": "next start",
+    "server:start": "node dist/server/index.js",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "test:logic": "tsx server/game.test.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "framer-motion": "^11.18.2",
+    "lucide-react": "^0.468.0",
+    "next": "^14.2.23",
+    "prisma": "^5.22.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.23",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
